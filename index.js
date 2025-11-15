@@ -15,7 +15,7 @@ import MongoStore from "connect-mongo";
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:["http://localhost:5173","http://4.213.100.69"],
     credentials:true
 }))
 
